@@ -1,0 +1,1209 @@
+/* ===========================
+   FRESHGUARD PREMIUM UI
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#eef5ff;
+    color:#1f2937;
+}
+
+/* ===========================
+   Dashboard Background
+=========================== */
+
+.dashboard{
+
+min-height:100vh;
+
+padding:40px;
+
+background-image:
+
+linear-gradient(
+
+rgba(255,255,255,.82),
+
+rgba(255,255,255,.82)
+
+),
+
+url("https://images.unsplash.com/photo-1542838132-92c53300491e?w=1800");
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
+
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.header h1{
+
+    font-size:42px;
+
+    color:#1d4ed8;
+
+    font-weight:700;
+
+}
+
+.header p{
+
+    margin-top:8px;
+
+    color:#64748b;
+
+    font-size:17px;
+
+}
+
+/* ===========================
+   Logout Button
+=========================== */
+
+.logout-btn{
+
+    background:linear-gradient(
+    135deg,
+    #ef4444,
+    #dc2626
+    );
+
+    color:white;
+
+    border:none;
+
+    padding:14px 25px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(220,38,38,.25);
+
+}
+
+/* ===========================
+   Welcome Card
+=========================== */
+
+.welcome-card{
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+    );
+
+    color:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 40px
+    rgba(37,99,235,.25);
+
+    margin-bottom:30px;
+
+}
+
+.welcome-card h2{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+.welcome-card p{
+
+    font-size:17px;
+
+    opacity:.95;
+
+}
+
+/* ===========================
+ Notification
+=========================== */
+
+.notification-card{
+
+    background:
+
+    rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+
+    border-left:6px solid orange;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    margin-bottom:25px;
+
+    font-size:17px;
+
+}
+
+/* ===========================
+ Summary Grid
+=========================== */
+
+.summary-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+ Summary Cards
+=========================== */
+
+.summary-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.summary-card:hover{
+
+    transform:
+
+    translateY(-8px);
+
+    box-shadow:
+
+    0 18px 35px rgba(37,99,235,.15);
+
+}
+
+.summary-card h2{
+
+    color:#64748b;
+
+    font-size:20px;
+
+}
+
+.summary-card p{
+
+    font-size:48px;
+
+    font-weight:bold;
+
+    margin-top:15px;
+
+}
+
+/* Colors */
+
+.blue{
+
+    border-top:6px solid #2563eb;
+
+}
+
+.green{
+
+    border-top:6px solid #16a34a;
+
+}
+
+.red{
+
+    border-top:6px solid #dc2626;
+
+}
+
+.yellow{
+
+    border-top:6px solid #f59e0b;
+
+}
+/* ===========================
+   Food Form
+=========================== */
+
+.food-form{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    margin-bottom:35px;
+
+}
+
+.food-form h2{
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+    font-size:28px;
+
+}
+
+.food-form input,
+.food-form select{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    margin-bottom:15px;
+
+    transition:.3s;
+
+    color:#111827;
+
+    background:white;
+
+}
+
+.food-form input:focus,
+.food-form select:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+/* ===========================
+ Buttons
+=========================== */
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.food-form button,
+.recipe-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+    );
+
+    color:white;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+}
+
+.food-form button:hover,
+.recipe-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 25px rgba(37,99,235,.25);
+
+}
+
+/* ===========================
+ Search Box
+=========================== */
+
+.search-box{
+
+    width:100%;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    border:1px solid #d1d5db;
+
+    font-size:16px;
+
+    margin:25px 0;
+
+    color:#111827;
+
+}
+
+.search-box:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+}
+
+/* ===========================
+ Sort Box
+=========================== */
+
+.sort-box{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    border:1px solid #d1d5db;
+
+    margin-bottom:25px;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+ Food Grid
+=========================== */
+
+.food-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+
+}
+
+/* ===========================
+ Food Card
+=========================== */
+
+.food-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    padding:18px;
+
+}
+
+.food-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 22px 40px rgba(37,99,235,.18);
+
+}
+
+/* ===========================
+ Food Image
+=========================== */
+
+.food-card img,
+.food-image{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+ Food Title
+=========================== */
+
+.food-card h3{
+
+    color:#2563eb;
+
+    font-size:25px;
+
+    margin-bottom:12px;
+
+}
+
+.food-card p{
+
+    margin:8px 0;
+
+    color:#4b5563;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+ Countdown
+=========================== */
+
+.countdown{
+  padding:12px;
+  border-radius:12px;
+  text-align:center;
+  font-weight:700;
+  font-size:18px;
+  margin:15px 0;
+}
+
+.countdown.expired{
+  background:#fee2e2;
+  color:#b91c1c !important;
+}
+
+.countdown.expiring-soon{
+  background:#fef3c7;
+  color:#b45309 !important;
+}
+
+.countdown.fresh{
+  background:#dcfce7;
+  color:#15803d !important;
+}
+
+
+/* ===========================
+ Status
+=========================== */
+
+.status{
+
+    font-weight:bold;
+
+}
+
+.status.fresh{
+
+    color:#16a34a;
+
+}
+
+.status.expiring-soon{
+
+    color:#f59e0b;
+
+}
+
+.status.expired{
+
+    color:#dc2626;
+
+}
+
+/* ===========================
+ Edit/Delete Buttons
+=========================== */
+
+.edit-btn{
+
+    background:#16a34a;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    margin-right:10px;
+
+}
+
+.edit-btn:hover{
+
+    background:#15803d;
+
+}
+
+.delete-btn{
+
+    background:#dc2626;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+}
+
+.delete-btn:hover{
+
+    background:#b91c1c;
+
+}
+
+/* ===========================
+ Empty Card
+=========================== */
+
+.empty-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+/* ===========================
+   AI CHAT
+=========================== */
+
+.ai-chat{
+
+    margin-top:35px;
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.ai-header{
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+    );
+
+    color:white;
+
+    padding:20px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.ai-message{
+
+    padding:25px;
+
+    background:#fafcff;
+
+}
+
+
+
+.ai-message {
+  padding: 25px;
+  background: #fafcff;
+  border-radius: 0 0 22px 22px;
+}
+
+.ai-message h3 {
+  color: #2563eb;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.recipe-content {
+  white-space: pre-line;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #374151;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  border-left: 4px solid #2563eb;
+}
+
+.recipe-btn{
+
+    margin-top:25px;
+
+}
+
+/* ===========================
+   SHOPPING LIST
+=========================== */
+
+.shopping-card{
+
+    margin-top:35px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.shopping-card h2{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.shopping-input{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.shopping-input input{
+    width:100%;
+    padding:16px;
+    border-radius:12px;
+    border:1px solid #475569;
+    background:#334155;
+    color:#fff;
+    font-size:18px;
+}
+
+.shopping-input input::placeholder{
+    color:#cbd5e1;
+}
+
+.shopping-input button{
+    width:100%;
+    padding:16px;
+    margin-top:12px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.shopping-input button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+.shopping-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#334155;
+    color:white;
+    padding:12px 16px;
+    border-radius:10px;
+    margin-top:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    font-size:16px;
+    font-weight:600;
+}
+
+.shopping-item:hover{
+
+    background:#eef6ff;
+
+}
+
+.shopping-item span{
+    color:#111827;
+    font-size:22px;
+    font-weight:700;
+}
+
+.shopping-item button{
+    background:#ef4444;
+    color:#fff;
+    border:none;
+    width:55px;
+    height:55px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:24px;
+    transition:.3s;
+}
+
+.shopping-item button:hover{
+    background:#dc2626;
+    transform:scale(1.08);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    color:#6b7280;
+
+    font-size:15px;
+
+    padding:20px;
+
+}
+/* ===========================
+   Header Actions
+=========================== */
+
+.header-actions{
+
+display:flex;
+
+gap:15px;
+
+align-items:center;
+
+}
+
+.theme-btn{
+
+padding:13px 20px;
+
+border:none;
+
+border-radius:12px;
+
+background:#111827;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.theme-btn:hover{
+
+background:#1f2937;
+
+transform:translateY(-2px);
+
+}
+
+/* ===========================
+   Dark Mode
+=========================== */
+
+.dashboard.dark{
+
+background:#0f172a;
+
+color:white;
+
+}
+
+.dashboard.dark .food-card,
+.dashboard.dark .food-form,
+.dashboard.dark .summary-card,
+.dashboard.dark .shopping-card,
+.dashboard.dark .chart-card,
+.dashboard.dark .ai-chat,
+.dashboard.dark .welcome-card{
+
+background:#1e293b;
+
+color:white;
+
+}
+
+.dashboard.dark input,
+.dashboard.dark select{
+
+background:#334155;
+
+color:white;
+
+border:1px solid #475569;
+
+}
+
+.dashboard.dark h1,
+.dashboard.dark h2,
+.dashboard.dark h3{
+
+color:white;
+
+}
+
+.dashboard.dark p{
+
+color:#d1d5db;
+
+}
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+.food-card,
+.summary-card,
+.shopping-card,
+.ai-chat,
+.food-form{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef2ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b82f6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#2563eb;
+
+}
+
+/* ===========================
+   HOVER EFFECTS
+=========================== */
+
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.food-image{
+
+    transition:.4s;
+
+}
+
+.food-card:hover .food-image{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    text-align:center;
+
+}
+
+.summary-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.food-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.shopping-input{
+
+    flex-direction:column;
+
+}
+
+.shopping-input button{
+
+    width:100%;
+
+}
+
+.food-form{
+
+    padding:20px;
+
+}
+
+.welcome-card{
+
+    padding:25px;
+
+}
+
+.header h1{
+
+    font-size:30px;
+
+}
+
+.summary-card p{
+
+    font-size:38px;
+
+}
+
+}
+
+/* ===========================
+   PREMIUM GLASS EFFECT
+=========================== */
+
+.food-card,
+.summary-card,
+.shopping-card,
+.food-form,
+.ai-chat{
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+}
+
+/* ===========================
+   IMAGE SHADOW
+=========================== */
+
+.food-image{
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   END
+=========================== */
+.analytics-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+margin:35px 0;
+
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.analytics-card h2{
+
+margin-bottom:25px;
+
+color:#2563eb;
+
+}
+
+.analytics-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.analytics-box{
+
+padding:30px;
+
+border-radius:18px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.analytics-box h1{
+
+font-size:55px;
+
+margin-top:15px;
+
+}
+
+.good{
+
+background:linear-gradient(135deg,#22c55e,#16a34a);
+
+}
+
+.bad{
+
+background:linear-gradient(135deg,#ef4444,#dc2626);
+
+}
+.dashboard-toast {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #16a34a;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  z-index: 99999;
+  animation: toastSlideUp 0.3s ease;
+}
+
+@keyframes toastSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
